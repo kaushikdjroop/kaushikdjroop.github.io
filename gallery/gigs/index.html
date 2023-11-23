@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DJ ROOP - Gigs Gallery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/brandLogoSmall.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="musicPlayer.css">
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="scrollAnimate.js"></script>
+    <script src="musicPlayer.js"></script>
+    <link href="https://martingarrix.com/css/layout.css" rel="stylesheet">
+      
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118881271-1"></script>
+      <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-118881271-1');
+      </script>
+
+
+      <style>
+        .cntainer{
+            width: 400px;
+            position: relative;
+            overflow: hidden;
+        }
+        .cntainer img{
+            width: 100%;
+            height: auto;
+        }
+        .cntainer:hover .t{
+            top: 0;
+        }
+        .t{
+            color: white;
+            background-color: rgba(0,0,0,0.8);
+            position: absolute;
+            top: -100%;
+            height: 100%;
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            transition: all 0.4s;
+        }
+    </style>
+
+
+    <style>
+
+      .cards{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+        margin: auto 1rem;
+        width: auto !important;
+      }
+      .card{
+        background-color: rgba(0, 0, 0, 0.774);
+        backdrop-filter: blur(3px);
+        background-image: none !important;
+        width: 100%;
+        max-width: 100% !important;
+        grid-gap: 10px;
+        padding: 1rem;
+        border: solid 1px rgba(255, 255, 255, 0.623) !important;
+      }
+      
+      @media only screen and (max-width: 900px) {
+  	.cards {
+        display: flex;
+        flex-direction: column;
+  		}
+	}
+
+    </style>
+
+
+    <style>
+        .preloader{
+        height: 100vh;
+        width: 100vw;
+        background: black;
+        position: fixed;
+        padding: 0;
+        margin: 0;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+        }
+
+      .preloader img{
+        width: 100%;
+      }
+    </style>
+        
+    <script>
+      setTimeout(()=>{
+        document.querySelector(".preloader").style.display = "none";
+        }, 6000);
+    </script>
+
+
+      
+  </head>
+
+
+<body bgcolor="black" id="body" onload="bodyOnLoad()" data-spy="scroll" data-target=".navbar" data-offset="60">
+  
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+      <a class="navbar-brand" href="https://www.kaushikdjroop.com">
+        <img src="images/brandLogo.png" style="height:70px">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+    <div class="collapse justify-content-center navbar-collapse" id="Navbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="http://www.kaushikdjroop.com/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://www.kaushikdjroop.com/music">Music</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="http://www.kaushikdjroop.com/tour">Tour</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://www.kaushikdjroop.com/gallery">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://www.kaushikdjroop.com/merchandise">Merchandise</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://www.kaushikdjroop.com/contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://www.kaushikdjroop.com/presskit">Press Kit</a>
+        </li>
+        
+      </ul>
+    </div>  
+    </nav>
+
+<div class="preloader">
+      <img src="https://kaushikdjroop.com/images/roop_symbol_intro.gif">
+    </div>
+
+
+<!-- PRESSKIT ############################################### -->
+<section id="presskit">
+	<!-- Content -->
+  <div id="presskit" style="background-image:url('images/playlistBG.jpg');background-attachment:fixed;">
+	
+				
+<br><br><br>
+
+      <br>
+      <center><br><img src="images/gigs.png" style="width: 250px; fill: white;"><br>
+      	<img src="images/gallery.png" style="width: 250px; fill: white;">
+      <!--<a href="http://kaushikdjroop.com/" target="_self"><img style="width: 30%" src="images/press-kit-icon.png"></a>--></center>
+
+<br>
+
+        <center>
+
+     <div class="row" style="width:100%;">
+  
+          <div class="card col-sm-4 text-center">
+            <div class="cntainer" style="width:100%;">
+                <img class="card-img-top" src="images/pictures/1.png" alt="Card image" style="width:100%;">
+                    <div class="t">
+                      <br>
+                      <h2>CIS MUN 2023</h2>
+                        <h3>Calcutta International School</h3>
+                        <a target="_blank" href="https://www.instagram.com/p/CuxCM58vS_q/">
+                            <button class="btn btn-primary">Explore</button>
+                          </a>
+                    </div>
+              </div>
+          </div>
+  
+          <div class="card col-sm-4 text-center">
+            <div class="cntainer" style="width:100%;">
+                <img class="card-img-top" src="images/pictures/2.png" alt="Card image" style="width:100%;">
+                  <div class="t">
+                      <br>
+                      <h2>REBECA 2023</h2>
+                        <h3>IIEST, Shibpur</h3>
+                        <a target="_blank" href="https://www.instagram.com/p/Crdw_E1vkYe/">
+                            <button class="btn btn-primary">Explore</button>
+                          </a>
+                    </div>
+                </div>
+            </div>
+  
+          <div class="card col-sm-4 text-center">
+            <div class="cntainer" style="width:100%;">
+                <img class="card-img-top" src="images/pictures/3.png" alt="Card image" style="width:100%;">
+                  <div class="t">
+                      <br>
+                      <h2>Sunburn Arena w/ Martin Garrix</h2>
+                        <h3>Aquatica, Kolkata</h3>
+                          <a target="_blank" href="https://www.instagram.com/p/CpsuuzvyaaT/">
+                            <button class="btn btn-primary">Explore</button>
+                          </a>
+                    </div>
+                </div>
+            </div>        
+  
+    </div>
+
+      <div class="row" style="width:100%;">
+  
+          <div class="card col-sm-4 text-center">
+            <div class="cntainer" style="width:100%;">
+                <img class="card-img-top" src="images/pictures/4.png" alt="Card image" style="width:100%;">
+                  <div class="t">
+                      <br>
+                      <h2>AMIPHORIA 2023</h2>
+                        <h3>Amity University, Kolkata</h3>
+                        <a target="_blank" href="https://www.instagram.com/p/CpambYCPL1i/">
+                            <button class="btn btn-primary">Explore</button>
+                          </a>
+                    </div>
+                </div>
+            </div>
+  
+          <div class="card col-sm-4 text-center">
+            <div class="cntainer" style="width:100%;">
+                <img class="card-img-top" src="images/pictures/5.png" alt="Card image" style="width:100%;">
+                  <div class="t">
+                      <br>
+                      <h2>NEW YEAR EVE</h2>
+                        <h3>Fairfield by Marriott, Kolkata</h3>
+                        <a target="_blank" href="https://www.instagram.com/p/Cnhc7TXvT2Q/">
+                            <button class="btn btn-primary">Explore</button>
+                          </a>
+                    </div>
+                </div>
+            </div>
+  
+          <div class="card col-sm-4 text-center">
+            <div class="cntainer" style="width:100%;">
+                <img class="card-img-top" src="images/pictures/6.png" alt="Card image" style="width:100%;">
+                  <div class="t">
+                      <br>
+                      <h2>Sunburn Festival 2022</h2>
+                        <h3>Vagator Beach, Goa</h3>
+                        <a target="_blank" href="https://www.instagram.com/p/Cm67u_xvkHK/">
+                            <button class="btn btn-primary">Explore</button>
+                          </a>
+                    </div>
+                </div>
+            </div>        
+  
+    </div>
+
+          <div class="row" style="width:100%;">
+  
+          <div class="card col-sm-4 text-center">
+            <div class="cntainer" style="width:100%;">
+                <img class="card-img-top" src="images/pictures/7.png" alt="Card image" style="width:100%;">
+                  <div class="t">
+                      <br>
+                      <h2>AGON 2022</h2>
+                        <h3>Calcutta National Medical College</h3>
+                        <a target="_blank" href="https://www.instagram.com/p/Ci8MOAHvkWs/">
+                            <button class="btn btn-primary">Explore</button>
+                          </a>
+                    </div>
+                </div>
+            </div>
+  
+          <div class="card col-sm-4 text-center">
+            <div class="cntainer" style="width:100%;">
+                <img class="card-img-top" src="images/pictures/8.png" alt="Card image" style="width:100%;">
+                  <div class="t">
+                      <br>
+                      <h2>Sunburn Arena w/ NUCLEYA</h2>
+                        <h3>The Westin, Kolkata</h3>
+                          <a target="_blank" href="https://www.instagram.com/p/ChenE3DJ_td/">
+                            <button class="btn btn-primary">Explore</button>
+                          </a>
+                    </div>
+                </div>
+            </div>
+  
+          <div class="card col-sm-4 text-center">
+            <div class="cntainer" style="width:100%;">
+                <img class="card-img-top" src="images/pictures/9.png" alt="Card image" style="width:100%;">
+                    <div class="t">
+                      <br>
+                      <h2>CRESCENDO 2022</h2>
+                        <h3>ESIC Medical College & Hospital</h3>
+                        <a target="_blank" href="https://www.instagram.com/p/CgKHuQfJ9Pi/">
+                          <button class="btn btn-primary">Explore</button>
+                          </a>
+                    </div>
+                </div>
+            </div>        
+  
+    </div>
+        
+        <div class="row" style="width:100%;">
+  
+          <div class="card col-sm-4 text-center">
+            <div class="cntainer" style="width:100%;">
+                <img class="card-img-top" src="images/pictures/10.png" alt="Card image" style="width:100%;">
+                  <div class="t">
+                      <br>
+                      <h2>Anandadhara 2022</h2>
+                        <h3>Brainware University, Kolkata</h3>
+                        <a target="_blank" href="https://www.instagram.com/p/CeD4vnYpycx/">
+                            <button class="btn btn-primary">Explore</button>
+                          </a>
+                    </div>
+                </div>
+            </div>
+  
+          <div class="card col-sm-4 text-center">
+            <div class="cntainer" style="width:100%;">
+                <img class="card-img-top" src="images/pictures/11.png" alt="Card image" style="width:100%;">
+                  <div class="t">
+                      <br>
+                      <h2>SPANDAN 2022</h2>
+                        <h3>CEM, Kolaghat</h3>
+                        <a target="_blank" href="https://www.instagram.com/p/CdyP7z0pkDw/">
+                            <button class="btn btn-primary">Explore</button>
+                          </a>
+                    </div>
+                </div>
+            </div>
+  
+          <div class="card col-sm-4 text-center">
+            <div class="cntainer" style="width:100%;">
+                <img class="card-img-top" src="images/pictures/12.png" alt="Card image" style="width:100%;">
+                  <div class="t">
+                      <br>
+                      <h2>ECSTASIA 2022</h2>
+                        <h3>UEM, Kolkata</h3>
+                        <a target="_blank" href="https://www.instagram.com/p/CbvEKBQpu1I/">
+                            <button class="btn btn-primary">Explore</button>
+                          </a>
+                    </div>
+                </div>
+            </div>        
+  
+    </div>
+
+      <div class="row" style="width:100%;">
+  
+          <div class="card col-sm-4 text-center">
+            <div class="cntainer" style="width:100%;">
+                <img class="card-img-top" src="images/pictures/13.png" alt="Card image" style="width:100%;">
+                  <div class="t">
+                      <br>
+                      <h2>RANGHOLI 5.0</h2>
+                        <h3>Central Park, Kalyani</h3>
+                        <a target="_blank" href="https://www.instagram.com/p/CbfQcjxpwL-/">
+                            <button class="btn btn-primary">Explore</button>
+                          </a>
+                    </div>
+                </div>
+            </div>
+  
+          <div class="card col-sm-4 text-center">
+            <div class="cntainer" style="width:100%;">
+                <img class="card-img-top" src="images/pictures/14.png" alt="Card image" style="width:100%;">
+                  <div class="t">
+                      <br>
+                      <h2>ARUSHARKA 2022</h2>
+                        <h3>IVWS, Kolkata</h3>
+                        <a target="_blank" href="https://www.instagram.com/p/Ca-Iniop9Xl/">
+                            <button class="btn btn-primary">Explore</button>
+                          </a>
+                    </div>
+                </div>
+            </div>
+  
+          <div class="card col-sm-4 text-center">
+            <div class="cntainer" style="width:100%;">
+                <img class="card-img-top" src="images/pictures/15.png" alt="Card image" style="width:100%;">
+                  <div class="t">
+                      <br>
+                      <h2>Super Saturday</h2>
+                        <h3>The Sixth Sense, Kolkata</h3>
+                        <a target="_blank" href="https://www.instagram.com/p/CMkNyiZhfr8/">
+                            <button class="btn btn-primary">Explore</button>
+                          </a>
+                    </div>
+                </div>
+            </div>        
+  
+    </div>
+
+    <div class="row" style="width:100%;">
+  
+          <div class="card col-sm-4 text-center">
+            <div class="cntainer" style="width:100%;">
+                <img class="card-img-top" src="images/pictures/16.png" alt="Card image" style="width:100%;">
+                  <div class="t">
+                      <br>
+                      <h2>ECSTASIA 2020</h2>
+                        <h3>UEM, Kolkata</h3>
+                        <a target="_blank" href="https://www.instagram.com/p/B9ZhCu6FRMq/">
+                            <button class="btn btn-primary">Explore</button>
+                          </a>
+                    </div>
+                </div>
+            </div>
+  
+          <div class="card col-sm-4 text-center">
+            <div class="cntainer" style="width:100%;">
+                <img class="card-img-top" src="images/pictures/17.png" alt="Card image" style="width:100%;">
+                  <div class="t">
+                      <br>
+                      <h2>Xavrang'19 [DJ War]</h2>
+                        <h3>SXU, Kolkata</h3>
+                        <a target="_blank" href="https://www.instagram.com/p/Bv4eQU2jrCy/">
+                            <button class="btn btn-primary">Explore</button>
+                          </a>
+                    </div>
+                </div>
+            </div>
+  
+          <div class="card col-sm-4 text-center">
+            <div class="cntainer" style="width:100%;">
+                <img class="card-img-top" src="images/pictures/18.png" alt="Card image" style="width:100%;">
+                  <div class="t">
+                      <br>
+                      <h2>ECSTASIA 2019</h2>
+                        <h3>UEM, Kolkata</h3>
+                        <a target="_blank" href="https://www.instagram.com/p/Bul0VCGHk02/">
+                            <button class="btn btn-primary">Explore</button>
+                          </a>
+                    </div>
+                </div>
+            </div>        
+  
+    </div>
+
+         <div class="row" style="width:100%;">
+  
+          <div class="card col-sm-4 text-center">
+            <div class="cntainer" style="width:100%;">
+                <img class="card-img-top" src="images/pictures/19.png" alt="Card image" style="width:100%;">
+                  <div class="t">
+                      <br>
+                      <h2>OUTLAWED 2019</h2>
+                        <h3>WBNUJS, Kolkata</h3>
+                        <a target="_blank" href="https://www.instagram.com/p/Btq1V0_HTT0/">
+                            <button class="btn btn-primary">Explore</button>
+                          </a>
+                    </div>
+                </div>
+            </div>
+  
+          <div class="card col-sm-4 text-center">
+            <div class="cntainer" style="width:100%;">
+                <img class="card-img-top" src="images/pictures/20.png" alt="Card image" style="width:100%;">
+                  <div class="t">
+                      <br>
+                      <h2>CARPE DIEM 2019</h2>
+                        <h3>IIM Calcutta</h3>
+                        <a target="_blank" href="https://www.instagram.com/p/Bs58BBgAW2D/">
+                            <button class="btn btn-primary">Explore</button>
+                          </a>
+                    </div>
+                </div>
+            </div>
+  
+          <div class="card col-sm-4 text-center">
+            <div class="cntainer" style="width:100%;">
+                <img class="card-img-top" src="images/pictures/21.png" alt="Card image" style="width:100%;">
+                  <div class="t">
+                      <br>
+                      <h2>KSHITIJ 2019</h2>
+                        <h3>IIT Kharagpur</h3>
+                        <a target="_blank" href="https://www.instagram.com/p/Bs2VwZbjPTO/">
+                            <button class="btn btn-primary">Explore</button>
+                          </a>
+                    </div>
+                </div>
+            </div>        
+  
+    </div>
+
+        <div class="row" style="width:100%;">
+  
+          <div class="card col-sm-4 text-center">
+            <div class="cntainer" style="width:100%;">
+                <img class="card-img-top" src="images/pictures/22.png" alt="Card image" style="width:100%;">
+                  <div class="t">
+                      <br>
+                      <h2>The Colour Run 2018</h2>
+                        <h3>Antaragni, IIT Kanpur</h3>
+                        <a target="_blank" href="https://www.instagram.com/p/BxPTFMGHGqx/">
+                            <button class="btn btn-primary">Explore</button>
+                          </a>
+                    </div>
+                </div>
+            </div>
+  
+          <div class="card col-sm-4 text-center">
+            <div class="cntainer" style="width:100%;">
+                <img class="card-img-top" src="images/pictures/23.png" alt="Card image" style="width:100%;">
+                  <div class="t">
+                      <br>
+                      <h2>ESPEKTRO 2018</h2>
+                        <h3>KGEC, Kalyani</h3>
+                        <a target="_blank" href="https://www.instagram.com/p/BgJBPv2lISX/">
+                            <button class="btn btn-primary">Explore</button>
+                          </a>
+                    </div>
+                </div>
+            </div>
+  
+          <div class="card col-sm-4 text-center">
+            <div class="cntainer" style="width:100%;">
+                <img class="card-img-top" src="images/pictures/24.png" alt="Card image" style="width:100%;">
+                  <div class="t">
+                      <br>
+                      <h2>IEMPACT 2018</h2>
+                        <h3>IEM Kolkata</h3>
+                        <a target="_blank" href="https://www.instagram.com/p/BelcCCKHNFo/">
+                            <button class="btn btn-primary">Explore</button>
+                          </a>
+                    </div>
+                </div>
+            </div>        
+        
+        </div>
+
+        <div class="row" style="width:100%;">
+  
+          <div class="card col-sm-4 text-center">
+            <div class="cntainer" style="width:100%;">
+                <img class="card-img-top" src="images/pictures/25.png" alt="Card image" style="width:100%;">
+                  <div class="t">
+                      <br>
+                      <h2>KSHITIJ 2018</h2>
+                        <h3>IIT Kharagpur</h3>
+                        <a target="_blank" href="https://www.instagram.com/p/BfQ0eOhHimS/">
+                            <button class="btn btn-primary">Explore</button>
+                          </a>
+                    </div>
+                </div>
+            </div>
+  
+          <div class="card col-sm-4 text-center">
+            <div class="cntainer" style="width:100%;">
+                <img class="card-img-top" src="images/pictures/26.png" alt="Card image" style="width:100%;">
+                  <div class="t">
+                      <br>
+                      <h2>New Year Eve 2018</h2>
+                        <h3>The Brewmaster, Kolkata</h3>
+                        <a target="_blank" href="https://www.instagram.com/p/BduOaZpnZq2/">
+                            <button class="btn btn-primary">Explore</button>
+                          </a>
+                    </div>
+                </div>
+            </div>
+  
+          <div class="card col-sm-4 text-center">
+            <div class="cntainer" style="width:100%;">
+                <img class="card-img-top" src="images/pictures/27.png" alt="Card image" style="width:100%;">
+                  <div class="t">
+                      <br>
+                      <h2>Home Coming 2017</h2>
+                        <h3>IEM Kolkata</h3>
+                        <a target="_blank" href="https://www.instagram.com/p/BdCPqLQn-lZ/">
+                            <button class="btn btn-primary">Explore</button>
+                          </a>
+                    </div>
+                </div>
+            </div>        
+        
+        </div>
+
+
+            <div class="row" style="width:100%;">
+  
+          <div class="card col-sm-4 text-center">
+            <div class="cntainer" style="width:100%;">
+                <img class="card-img-top" src="images/pictures/28.png" alt="Card image" style="width:100%;">
+                  <div class="t">
+                      <br>
+                      <h2>Annual Reunion 2017</h2>
+                        <h3>The Aryans School</h3>
+                        <a target="_blank" href="https://www.instagram.com/p/BZ9HAfVHxTX/">
+                            <button class="btn btn-primary">Explore</button>
+                          </a>
+                    </div>
+                </div>
+            </div>
+  
+          <div class="card col-sm-4 text-center">
+            <div class="cntainer" style="width:100%;">
+                <img class="card-img-top" src="images/pictures/29.png" alt="Card image" style="width:100%;">
+                  <div class="t">
+                      <br>
+                      <h2>IEM-UEM Cultural Fest 2017</h2>
+                        <h3>IEM Kolkata</h3>
+                        <a target="_blank" href="https://www.instagram.com/p/BPx8qjIFmU-/">
+                            <button class="btn btn-primary">Explore</button>
+                          </a>
+                    </div>
+                </div>
+            </div>
+  
+          <div class="card col-sm-4 text-center">
+            <div class="cntainer" style="width:100%;">
+                <img class="card-img-top" src="images/pictures/30.png" alt="Card image" style="width:100%;">
+                  <div class="t">
+                      <br>
+                      <h2>Reunion 2017</h2>
+                        <h3>IEM Kolkata</h3>
+                        <a target="_blank" href="https://www.instagram.com/p/BOqt67oFAjf/">
+                            <button class="btn btn-primary">Explore</button>
+                          </a>
+                    </div>
+                </div>
+            </div>        
+        
+        </div>
+
+
+
+
+
+ </div>  
+
+
+</center>
+
+				
+				
+				
+			
+	<!-- /content -->
+</section>
+<!-- /PRESSKIT ############################################### -->
+
+
+   <div id="footer" style="background-image:url('images/playlistBG.jpg');background-attachment:fixed;  width: 100%">
+    <footer class="anim container-fluid text-center slideanim" style="background-image:url('images/footer.png');">
+  <!--53 69 74 65 42 79 41 6e 69 72 62 61 6e 4d 75 6b 68 65 72 6a 65 65 -->
+    <br>
+    <h3 style="font-weight: 300;color:white">Follow Me</h3>
+    <br>
+    <div class="row link-icon">
+            
+            <div class="col-md-12">
+              <ul class="list-inline mb-0">
+                
+          <li class="list-inline-item">
+                  <a target="_blank" href="https://facebook.com/kaushikdjroop">
+          <img class="glow" src="images/links/fb.png">  
+          </a>
+                </li>
+                
+          <li class="list-inline-item">
+                  <a target="_blank" href="https://instagram.com/kaushikdjroop">
+            <img class="glow" src="images/links/insta.png">
+          </a>
+                </li>
+          
+          <li class="list-inline-item">
+                  <a target="_blank" href="https://youtube.com/kaushikdjroop">
+            <img class="glow" src="images/links/yt.png">
+          </a>
+                </li>
+  
+          <li class="list-inline-item">
+                  <a target="_blank" href="https://twitter.com/kaushikdjroop">
+            <img class="glow" src="images/links/twitter.png">
+          </a>
+                </li>       
+                
+          <li class="list-inline-item">
+                  <a target="_blank" href="https://open.spotify.com/artist/4WrQ3mY1JO0Z05195gwAZS">
+            <img class="glow" src="images/links/spotify.png">
+          </a>
+                </li>
+
+          <li class="list-inline-item">
+                  <a target="_blank" href="https://music.apple.com/in/artist/dj-roop/1547570552">
+            <img class="glow" src="images/links/apple.png">
+              </a>
+                </li>   
+
+          <li class="list-inline-item">
+                  <a target="_blank" href="https://www.jiosaavn.com/artist/dj-roop/5diJwjzEFxg_">
+            <img class="glow" src="images/links/saavn.png">
+              </a>
+                </li>  
+
+          <li class="list-inline-item">
+                  <a target="_blank" href="https://music.amazon.in/artists/B08SLFZVCD/dj-roop">
+            <img class="glow" src="images/links/amazon.png">
+              </a>
+                </li> 
+
+          <li class="list-inline-item">
+                  <a target="_blank" href="https://soundcloud.com/kaushikdjroop">
+            <img class="glow" src="images/links/sc.png">
+          </a>
+                </li>       
+          
+              </ul>
+            </div>
+   
+          </div>
+  <br>
+  
+    <!-- <button id="designer" class="btn btn-light" data-toggle="modal" data-target="#design">Website Credits</button> -->
+
+    
+
+    <P style="color: white">&copy; Copyright Kaushik Das - All Rights Reserved</P>
+    
+    <br>
+
+    </footer>
+  
+    <!--ABOUT DESIGNER-->
+    
+    <!-- <div class="modal fade" id="design" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content glow" style="background:url('public_html/images/footer.png');">
+          <div class="modal-header">
+            <h4 class="modal-title text-center">Website Credits</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+      
+  <div class="row" style="color:white">
+    <div class="col-md-1"></div>
+    <div class="col-md-3">
+    <img src="credits/anirban.png" height="200px">
+    </div>
+    <div class="col-md-7"></div>
+    <div class="col-md-1"></div>
+  </div>
+        <div class="row" style="color:white;margin:15px;">
+          
+          <div class="col-md-3">
+          <img src="images/credits/anirban.png" height="170px">
+          </div>
+          <div class="col-md-7">
+          <h5>Official Website Designer</h5>
+          
+            <h3>ANIRBAN MUKHERJEE</h3>
+             <h6>B.Tech, CSE Student</h6>
+            <a href="https://in.linkedin.com/in/anirbanmukherjee1997" target="_self">Visit Profile</a>
+            </div>
+          
+        </div>
+        <hr>
+        <div class="row" style="color:white;margin:15px;">
+          
+          <div class="col-md-3">
+          <img src="images/credits/shambik.jpeg" height="170px">
+          </div>
+          <div class="col-md-7">
+          <h5>Official Graphics Editor</h5>
+          <h3>SHAMBIK GHOSH</h3>
+          
+          <h6>B.Tech, ECE Student</h6>
+          <a href="https://www.facebook.com/shambik.ghosh.3" target="_self">Visit Profile</a>
+          </div>
+          
+        </div>
+        <hr>
+        <div class="row" style="color:white;margin:15px;">
+          
+          <div class="col-md-3">
+          <img src="images/credits/ankit.jpg" height="170px">
+          </div>
+          <div class="col-md-7">
+          <h5>Official Videographer</h5>
+          <h3>ANKIT SHOME</h3>
+          
+          <h6>Mass Communication Student</h6>
+          <a href="https://www.facebook.com/ankitshome8" target="_self">Visit Profile</a>
+          </div>
+          
+        </div>
+        
+          </div>
+         
+        </div>
+      </div>
+    </div> -->
+   
+  </div>
+  
+</div>
+
+</body>
+
+</html>

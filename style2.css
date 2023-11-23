@@ -1,0 +1,238 @@
+ h1, h2, h3, h4, h5, h6, p, a {
+  /*font-family: 'Roboto', sans-serif;*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+h3 {
+  color: #f00038;
+}
+
+h4 {
+  font-size: 14px;
+  font
+}
+
+a {
+  color: #f00038;
+}
+
+.red-text {
+  color: #f00038;
+}
+
+.red-background {
+  background-color: #f00038;
+}
+
+a.stream-buy-button {
+  display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem;
+    color: #fff;
+    background-color: #f00038;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.btn {
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 2px;
+  padding: 12px 32px;
+  font-size: 14px;
+  border-radius: 30px;
+}
+
+.music h2 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.red {
+  color: #f00038;
+}
+
+.fa-spotify {
+  color: green;
+}
+
+.nav-container {
+  max-width: 900px;
+}
+
+.navbar {
+  background-color: #111;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  padding-right: 1em;
+  padding-left: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.jumbotron {
+  background-color: #000;
+  /*text-align: center;*/
+  background-repeat: no-repeat;
+    background-position: top;
+    /*background-size: cover;*/
+}
+
+/*.jumbotron i {
+  font-size: 30px;
+}*/
+
+.jumbotron h1 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.jumbotron p, .jumbotron small {
+  color: #929292;
+}
+
+.jumbotron-image {
+  /*max-width: 240px;
+  margin-top: 20px;
+  margin-bottom: 20px;*/
+}
+
+@media (min-width: 576px) {
+  .jumbotron {
+      padding: 6rem 2rem;
+      height: 900px;
+      text-align: center;
+      background-image: url('/img/finalgarrix.jpg');
+  }
+
+  .ade-btn-buy {
+    padding-top: 200px;
+  }
+}
+
+.card {
+  margin-bottom: 40px;
+  border: none;
+}
+
+.more-releases {
+  max-width: 900px;
+}
+
+.footer-container {
+  max-width: 900px;
+}
+
+.max-container {
+  max-width: 900px;
+}
+
+.timer {
+  letter-spacing: 4px;
+}
+
+.tag-heuer {
+  max-width: 80px;
+}
+
+/* bootstrap breakpoints */
+@media (max-width: 540px) {
+
+  .jumbotron {
+    text-align: center;
+    min-height: 600px;
+    background-image: url('/img/finalgarrix-mobile.jpg');
+  }
+
+  .ade-btn-buy {
+    padding-top: 150px;
+  }
+
+  .jumbotron img {
+    max-width: 260px;
+  }
+
+  .jumbotron .py-5 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .jumbotron .my-5 {
+    margin-top: 0!important;
+    margin-bottom: 0 !important;
+  }
+
+  .jumbotron .mt-5 {
+    margin-top: 0.4rem !important;
+  }
+
+  .jumbotron .ml-3 {
+    margin-left: 0 !important;
+  }
+
+  .jumbotron h1 {
+    font-size: 24px;
+  }
+
+  .contact-container .pt-5 {
+    padding-top: 0 !important;
+  }
+}
+
+
+.contact h2, .contact p, .contact a {
+  color: #fff;
+}
+
+/* plus */
+.plus {
+  background-color: black;
+}
+
+.plus-squares .col-4 {
+  background-color: black;
+  padding: 0;
+}
+
+#countdown {
+  color: #fff;
+  padding-top: 45%;
+  text-align: center;
+  font-family: Helvetica ,serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+/* Custom, iPhone Retina */
+    @media only screen and (max-width : 500px) {
+      #countdown {
+        font-size: 0.6rem;
+      }
+}
+
+/* cookie consent */
+.js-cookie-consent .btn {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 6px 12px;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.alert {
+  margin-bottom: 0;
+}
+
+
+
